@@ -1,0 +1,159 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('Chalkboard.jpg');
+    cursor: url('arrow.png'), auto;
+    
+}
+
+h1{
+    font-size: 10pt;
+}
+
+
+.full {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.outline {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(246, 234, 196);
+    width: 340px;
+    height: 600px;
+    border: solid;
+    border-width: 2mm;
+    border-color:rgb(2, 54, 13);
+    flex-direction:column;
+    border-radius: 0%;
+    background-image: url('CalculatorBackground.jpg');
+    background-size: 100%;
+}
+    
+.row {
+    display: flex;
+    justify-content: center;
+}
+    
+#screen{
+    width: 500px;
+    height: 100px;
+    border: solid; 
+    background-color: rgb(129, 211, 147);
+    display: flex;
+    justify-content: center;
+    margin-top: 50mm;
+    border-width: 2mm;
+    border-color:rgb(2, 54, 13);
+    border-radius: 20%;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: bold;
+    color: rgb(27, 29, 168);
+    font-size: 40pt;
+}
+    
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border: solid;
+    border-width: 1mm;
+    border-color:rgb(2, 54, 13);
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    opacity: 1; 
+}
+.button:hover {
+    color:whitesmoke !important;
+    font-weight: 700 !important;
+    letter-spacing: 5pt;
+    background: none;
+    -webkit-box-shadow: 0px 10px 40px -10px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 5px 40px -10px rgb(0, 0, 0);
+    transition: all 0.3s ease 0s;
+    opacity: 0.6;
+}
+    
+.num {
+    background-color: rgb(245, 1, 1);
+    border-radius: 20%;
+    width: 25px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 5mm;
+
+}
+
+.sign{
+    margin-top: 15mm;
+    background-color: rgb(27, 29, 168);
+    padding: 10px;
+    height: 25px;
+    width:25px;
+   
+}
+
+.bot{
+    margin-top: 15mm;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+.picker{
+    border: solid;
+    border-width: 2mm;
+    border-color:rgb(2, 54, 13);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(129, 211, 147);
+    height: 100px;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.colors{
+    height: 80px;
+    width: 70px;
+    font-size: 6pt;
+}
+
+.blue{
+    background-color: rgb(27, 29, 168);
+    color: rgb(27, 29, 168);
+    margin: 2mm;
+}
+
+.red{
+    background-color: red;
+    color: red;
+    margin: 2mm;
+}
+.yellow{
+    background-color: yellow;
+    color: yellow;
+    margin: 2mm;
+}
+.orange{
+    background-color: orangered;
+    color: orangered;
+    margin: 2mm;
+}
+.green{
+    background-color: green;
+    color: green;
+    margin: 2mm;
+}
+.purple{
+    background-color: purple;
+    color: purple;
+    margin: 2mm;
+}
+
