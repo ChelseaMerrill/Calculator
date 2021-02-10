@@ -9,11 +9,6 @@ body {
     
 }
 
-h1{
-    font-size: 30pt;
-    font-family: 'Homemade Apple', cursive;
-    color: white;
-}
 
 
 .full {
@@ -44,12 +39,12 @@ h1{
     
 #screen{
     width: 500px;
-    height: 100px;
+    height: 130px;
     border: solid; 
     background-color: rgb(129, 211, 147);
     display: flex;
     justify-content: center;
-    margin-top: 50mm;
+    margin-top: 20mm;
     border-width: 2mm;
     border-color:rgb(2, 54, 13);
     border-radius: 20%;
@@ -113,12 +108,19 @@ h1{
     border: solid;
     border-width: 2mm;
     border-color:rgb(2, 54, 13);
+    background-color: rgb(129, 211, 147);
+    height: 250px;
+    width: 500px;
+} 
+h1{
+    font-size: 30pt;
+    font-family: 'Homemade Apple', cursive;
+    color: white;
+}
+.colorPot{
     display: flex;
     justify-content: center;
-    background-color: rgb(129, 211, 147);
-    height: 100px;
-    width: 500px;
-    margin-top: 20px;
+ 
 }
 
 .colors{
