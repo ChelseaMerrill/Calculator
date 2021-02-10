@@ -24,27 +24,55 @@ function addAllEventListeners(arr){
 addAllEventListeners(numbers)
 
 
+
 function makeItEqual (){
-    let string = screen.innerText
-    if (string.includes('+')){
-    let a = string.split('+')
-    screen.innerText = parseInt(a[0]) + parseInt(a[1])
+    let string = screen.innerText;
+    let hold = [];
+    let buildNum = ''
+    for (let i=0; i<string.length; i++){
+        if (string[i] === '+'){
+            if(buildNum) hold.push(buildNum)
+            buildNum = ''
+            hold.push('+')
+        } else if (string[i] === '-'){
+            if(buildNum) hold.push(buildNum)
+            buildNum = ''
+            hold.push('-')
+        } else if (string[i] === '+'){
+            if(buildNum) hold.push(buildNum)
+            buildNum = ''
+            hold.push('+')
+        } else if (string[i] === '*'){
+            if(buildNum) hold.push(buildNum)
+            buildNum = ''
+            hold.push('*')
+        } else if (string[i] === '/'){
+            if(buildNum) hold.push(buildNum)
+            buildNum = ''
+            hold.push('/')
+        } else {
+            buildNum += string[i]
+            if(i === string.length-1) hold.push(buildNum)
+        }
+    }
+    Calculate(hold)
 }
-if (string.includes('-')){
-    let b = string.split('-')
-    screen.innerText = parseInt(b[0]) - parseInt(b[1])
-}
-if (string.includes('*')){
-    let c = string.split('*')
-    screen.innerText = parseInt(c[0]) * parseInt(c[1])
-}
-if (string.includes('/')){
-    let d = string.split('/')
-    screen.innerText = parseInt(d[0]) / parseInt(d[1])
-}
+
+function Calculate (array){
+    let result = Number(array[0])
+    for (let i=1; i<array.length; i++){
+        if (array[i] === '+'){
+            result = result + Number(array[i+1])
+        } else if (array[i] === '-'){
+            result = result - Number(array[i+1])
+        } else if (array[i] === '*'){
+            result = result * Number(array[i+1])
+        } else if (array[i] === '/'){
+            result = result / Number(array[i+1])
+        }
+    } screen.innerText = result
 }
 equals.addEventListener('click', makeItEqual)
-
 
 function deleteBox (){
     screen.innerText=''
