@@ -13,7 +13,6 @@ function inputChange (event){
     const targetE1 = event.target;
     const buttonText = targetE1.innerText;
     screen.innerText += buttonText
-    console.log(typeof screen.innerText)
 }
 
 
@@ -73,22 +72,27 @@ function pickColor (e){
     let color = e.target.innerText
         if (color === 'red'){
             screen.setAttribute('style', 'color: red')
-            body.setAttribute('style', 'cursor: pointer')
+            body.setAttribute('style', "cursor: url('RED.png'), auto")
         }
         if (color === 'orange'){
             screen.setAttribute('style', 'color: orangered')
+            body.setAttribute('style', "cursor: url('ORANGE.png'), auto")
         }
         if (color === 'yellow'){
             screen.setAttribute('style', 'color: yellow')
+            body.setAttribute('style', "cursor: url('YELLOW.png'), auto")
         }
         if (color === 'green'){
             screen.setAttribute('style', 'color: green')
+            body.setAttribute('style', "cursor: url('GREEN.png'), auto")
         }
         if (color === 'blue'){
             screen.setAttribute('style', 'color: blue')
+            body.setAttribute('style', "cursor: url('BLUE.png'), auto")
         }
         if (color === 'purple'){
             screen.setAttribute('style', 'color: purple')
+            body.setAttribute('style', "cursor: url('PURPLE.png'), auto")
         }
 }
-// screen.addAllEventListeners('click', pickColor)
+
