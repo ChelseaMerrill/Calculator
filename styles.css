@@ -9,12 +9,18 @@ body {
     
 }
 
-
-
 .full {
     display: flex;
     justify-content: space-around;
-    
+    width: 920px;
+    margin: auto;
+}
+
+@media (max-width: 899px){
+    .full{
+        min-width: auto;
+        min-height: auto;
+    }
 }
 
 .outline {
